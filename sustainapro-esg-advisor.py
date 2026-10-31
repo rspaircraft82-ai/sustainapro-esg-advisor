@@ -109,7 +109,6 @@ else:
 # streamlit
 # google-generativeai
 
-!pip install streamlit google-generativeai
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile requirements.txt
