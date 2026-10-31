@@ -95,7 +95,9 @@ else:
                 # Mostrar el resultado en pantalla
                 st.success("¡Diagnóstico generado con éxito!")
                 st.markdown("### 📊 Reporte de Consultoría Preliminar")
-                st.write(response.text)
+               # Limpiamos los <br> y renderizamos el reporte en Markdown limpio
+                texto_limpio = response.text.replace("<br>", "  \n")
+                st.markdown(texto_limpio, unsafe_allow_html=True)
 
         except Exception as e:
             st.error(
