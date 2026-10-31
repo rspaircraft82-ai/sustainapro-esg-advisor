@@ -62,7 +62,7 @@ else:
                 # Inicializar el modelo con el rol estratégico de la consultora
                 generation_config = {
                     "temperature": 0.3,
-                    "max_output_tokens": 1000,
+                    "max_output_tokens": 4000,
                 }
                 model = genai.GenerativeModel(
                     model_name="gemini-3.8-flash",
