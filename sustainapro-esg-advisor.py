@@ -30,7 +30,7 @@ if not api_key:
     )
 else:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("gemini-3.8-flash")
     # Sidebar para la entrada de datos del cliente (aerolínea regional)
     st.sidebar.header("📋 Parámetros de la Aerolínea")
     flota = st.sidebar.selectbox(
@@ -65,7 +65,7 @@ else:
                     "max_output_tokens": 1000,
                 }
                 model = genai.GenerativeModel(
-                    model_name="gemini-2.0-flash",
+                    model_name="gemini-3.8-flash",
                     generation_config=generation_config,
                     system_instruction=(
                         "Eres el Socio Director de SustainaPro Consulting, "
