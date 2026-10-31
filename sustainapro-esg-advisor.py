@@ -30,7 +30,7 @@ if not api_key:
     )
 else:
     genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-1.5-flash")
     # Sidebar para la entrada de datos del cliente (aerolínea regional)
     st.sidebar.header("📋 Parámetros de la Aerolínea")
     flota = st.sidebar.selectbox(
